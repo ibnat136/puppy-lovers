@@ -1,11 +1,19 @@
+.bod
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
 .wrapper {
  display: grid;
- pad
+ padding: 0px;
+ margin: 0px;
 }
 .box {
  height: 100%;
- text-align: center;
- width: 100%;
+ /* text-align: center; */
+ width: 100;
+
 }
 .text {
  bottom: 0;
@@ -24,6 +32,8 @@
  background-color: #26a69a;
 }
 .b {
- background-color: #e91e63;
+ /* background-color: #e91e63; */
  padding-top: 0px;
+ padding-bottom: 500px;
+ background-image: url("gettyimages-512366437-612x612.jpg");
 }
