@@ -1,0 +1,29 @@
+.wrapper {
+ display: grid;
+ pad
+}
+.box {
+ height: 100%;
+ text-align: center;
+ width: 100%;
+}
+.text {
+ bottom: 0;
+ color: white;
+ font-family: Helvetica;
+ font-size: 300%;
+ height: 40%;
+ left: 0;
+ margin: auto;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 50%;
+}
+.a {
+ background-color: #26a69a;
+}
+.b {
+ background-color: #e91e63;
+ padding-top: 0px;
+}
