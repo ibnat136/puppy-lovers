@@ -1,0 +1,44 @@
+application: puppy-lovers
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+# handlers:
+# - url:
+#   static_files:
+#   upload:
+
+#static directories should go ABOVE the catch all url (.*)
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest
+#add jinja2 here, remember in .yaml files, every white space is important
+
+
+#COLOR PICKER
+#647b87
+#666487
+#494769
+#ff9900
+#6e2b40
+#153b70
+#39823c
+
+
+
+
+# WEBSITE for Dog_Shelter
+# https://www.bideawee.org/Adopt
+#
+# WEBSITE for dog breed
+# https://dogtime.com/dog-breeds/profiles
+#
+# Background pic
+# https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiAlKaXufPjAhVsg-AKHRiCCDEQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.dogbreedslist.info%2Fall-dog-breeds%2F&psig=AOvVaw3_WC4NikmKzZseljzbgqst&ust=1565359609815566
