@@ -1,8 +1,8 @@
 import webapp2
 import jinja2
+import os
 
 
-#remember, you can get this by searching for jinja2 google app engine
 jinja_current_dir = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
@@ -10,29 +10,27 @@ jinja_current_dir = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        start_template = jinja_current_dir.get_template("templates/welcome.html")
+        start_template = jinja_current_dir.get_template("templates/main.html")
         self.response.write(start_template.render())
-
-    # def post(self):
-    #     the_fav_food = self.request.get('user-fav-food')
-    #
-    #     #put into database (optional)
-    #     food_record = Food(food_name = the_fav_food)
-    #     food_record.put()
-
-        #pass to the template via a dictionary
-        # variable_dict = {'fav_food_for_view': the_fav_food}
-        # end_template = jinja_current_dir.get_template("templates/results.html")
-        # self.response.write(end_template.render(variable_dict))
 
 class Dog_Shelter(webapp2.RequestHandler):
     def get(self):
-        # food_list_template = jinja_current_dir.get_template("templates/foodlist.html")
-        # fav_foods = Food.query().order(-Food.food_name).fetch(3)
-        # dict_for_template = {'top_fav_foods': fav_foods}
-        # self.response.write(food_list_template.render(dict_for_template))
+        shelter_template = jinja_current_dir.get_template("templates/shelter.html")
+        self.response.write(shelter_template.render())
+
+class About_page(webapp2.RequestHandler):
+    def get(self):
+        about_template = jinja_current_dir.get_template("templates/about.html")
+        self.response.write(about_template.render())
+
+class Breed_tab(webapp2.RequestHandler):
+    def get(self):
+        breed_template = jinja_current_dir.get_template("templates/breed.html")
+        self.response.write(breed_template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/shelter', Dog_Shelter)
+    ('/shelter', Dog_Shelter),
+    ('/about', About_page),
+    ('/breed',Breed_tab)
 ], debug=True)
