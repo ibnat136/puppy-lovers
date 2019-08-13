@@ -1,118 +1,39 @@
 .bod
 {
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 .wrapper {
  display: grid;
- padding-bottom:500px;
+ padding: 0px;
  margin: 0px;
- animation: fadein 2s;
- -moz-animation: fadein 2s;
- -webkit-animation: fadein 2s;
- -o-animation: fadein 2s;
 }
 .box {
  height: 100%;
- background: black;
- width: 100%;
+ /* text-align: center; */
+ width: 100;
+
+}
+.text {
+ bottom: 0;
+ color: white;
+ font-family: Helvetica;
+ font-size: 300%;
+ height: 40%;
+ left: 0;
+ margin: auto;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 50%;
 }
 .a {
-  background-color: #35578f;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Fjalla One', sans-serif;
+ background-color: #26a69a;
 }
 .b {
- background-color: #e91e63;
+ /* background-color: #e91e63; */
  padding-top: 0px;
- padding-bottom: 400px;
- background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f56533e-8a17-44a7-a35f-75f10e1cd465/dbvu8ct-551e4432-c090-4be1-b126-5e3aa8f4b2a6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhmNTY1MzNlLThhMTctNDRhNy1hMzVmLTc1ZjEwZTFjZDQ2NVwvZGJ2dThjdC01NTFlNDQzMi1jMDkwLTRiZTEtYjEyNi01ZTNhYThmNGIyYTYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ugTjcXaLzTY37TESuh0AXgZLY10VMsfCPjVGvGn7owg");
- background-size: cover;
- background-repeat: no-repeat;
-}
-
-.c{
-  background-color: #35578f;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  color:white;
-  font-family: 'Fjalla One', sans-serif;
-  font-size:30px;
-}
-.d{
-  background-color: white;
-  background-image: url("https://media2.giphy.com/media/mRB9PmJFOjAw8/giphy.gif");
-  background-repeat: no-repeat;
-  background-size:cover;
-  padding-bottom: 400px;
-
-}
-.e{
-  background-color: #35578f;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-family: 'Fjalla One', sans-serif;
-  color:white;
-  font-size: 30px;
-
-}
-.f{
-  background-color: white;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.g {
- background-color: #35578f;
- text-align: center;
- padding-bottom: 30px;
- padding-top: 30px;
- color: white;
- font-family: 'Fjalla One', sans-serif;
- font-size: 30px;
-}
-.h {
- background-color: white;
- font-size: 15px;
- font-family: monospace;
-}
-
-button
-{
-  background-color: transparent;
-  border: none;
-  color: black;
-  padding: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin-left: 60px;
-  margin-right: 60px;
-  flex-basis: auto;
-}
-img.banner-img{
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  top: 20px;
-  right: 1190px;
-  left: 50px;
-}
-
-@-webkit-keyframes fadein {
-   from {
-       opacity:0;
-   }
-   to {
-       opacity:1;
-   }
+ padding-bottom: 500px;
+ background-image: url("gettyimages-512366437-612x612.jpg");
 }
